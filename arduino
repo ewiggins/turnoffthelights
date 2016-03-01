@@ -1,0 +1,17 @@
+#include "Arduino.h"
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int val1=analogRead(0);
+  int val2=digitalRead(9);
+Serial.print(val1);
+Serial.print("");
+Serial.print(val2);
+Serial.print("\n");
+delay(5000);
+}
